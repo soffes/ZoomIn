@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		212A875C2432F149007C8669 /* Zoom_Now.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 212A875B2432F149007C8669 /* Zoom_Now.entitlements */; };
+		212A875E2432F149007C8669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A875D2432F149007C8669 /* AppDelegate.swift */; };
+		212A87612432F149007C8669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212A875F2432F149007C8669 /* Main.storyboard */; };
+		212A87632432F149007C8669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A87622432F149007C8669 /* ViewController.swift */; };
+		212A87652432F14A007C8669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A87642432F14A007C8669 /* Assets.xcassets */; };
+		212A876C2432F14A007C8669 /* Zoom Now Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 212A876B2432F14A007C8669 /* Zoom Now Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		212A87712432F14A007C8669 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212A87702432F14A007C8669 /* Cocoa.framework */; };
+		212A87742432F14A007C8669 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A87732432F14A007C8669 /* SafariExtensionHandler.swift */; };
+		212A87762432F14A007C8669 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A87752432F14A007C8669 /* SafariExtensionViewController.swift */; };
+		212A87792432F14A007C8669 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 212A87772432F14A007C8669 /* SafariExtensionViewController.xib */; };
+		212A877C2432F14A007C8669 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 212A877B2432F14A007C8669 /* script.js */; };
+		212A877E2432F14A007C8669 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 212A877D2432F14A007C8669 /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		212A876D2432F14A007C8669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 212A87502432F149007C8669 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 212A876A2432F14A007C8669;
+			remoteInfo = "Zoom Now Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		212A87852432F14A007C8669 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				212A876C2432F14A007C8669 /* Zoom Now Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		212A87582432F149007C8669 /* Zoom Now.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zoom Now.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		212A875B2432F149007C8669 /* Zoom_Now.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zoom_Now.entitlements; sourceTree = "<group>"; };
+		212A875D2432F149007C8669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		212A87602432F149007C8669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		212A87622432F149007C8669 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		212A87642432F14A007C8669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		212A87662432F14A007C8669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212A876B2432F14A007C8669 /* Zoom Now Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Zoom Now Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		212A87702432F14A007C8669 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		212A87732432F14A007C8669 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		212A87752432F14A007C8669 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		212A87782432F14A007C8669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		212A877A2432F14A007C8669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212A877B2432F14A007C8669 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		212A877D2432F14A007C8669 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		212A877F2432F14A007C8669 /* Zoom_Now_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zoom_Now_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		212A87552432F149007C8669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212A87682432F14A007C8669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212A87712432F14A007C8669 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		212A874F2432F149007C8669 = {
+			isa = PBXGroup;
+			children = (
+				212A875A2432F149007C8669 /* Zoom Now */,
+				212A87722432F14A007C8669 /* Zoom Now Extension */,
+				212A876F2432F14A007C8669 /* Frameworks */,
+				212A87592432F149007C8669 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		212A87592432F149007C8669 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				212A87582432F149007C8669 /* Zoom Now.app */,
+				212A876B2432F14A007C8669 /* Zoom Now Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		212A875A2432F149007C8669 /* Zoom Now */ = {
+			isa = PBXGroup;
+			children = (
+				212A875B2432F149007C8669 /* Zoom_Now.entitlements */,
+				212A875D2432F149007C8669 /* AppDelegate.swift */,
+				212A875F2432F149007C8669 /* Main.storyboard */,
+				212A87622432F149007C8669 /* ViewController.swift */,
+				212A87642432F14A007C8669 /* Assets.xcassets */,
+				212A87662432F14A007C8669 /* Info.plist */,
+			);
+			path = "Zoom Now";
+			sourceTree = "<group>";
+		};
+		212A876F2432F14A007C8669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				212A87702432F14A007C8669 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		212A87722432F14A007C8669 /* Zoom Now Extension */ = {
+			isa = PBXGroup;
+			children = (
+				212A87732432F14A007C8669 /* SafariExtensionHandler.swift */,
+				212A87752432F14A007C8669 /* SafariExtensionViewController.swift */,
+				212A87772432F14A007C8669 /* SafariExtensionViewController.xib */,
+				212A877A2432F14A007C8669 /* Info.plist */,
+				212A877B2432F14A007C8669 /* script.js */,
+				212A877D2432F14A007C8669 /* ToolbarItemIcon.pdf */,
+				212A877F2432F14A007C8669 /* Zoom_Now_Extension.entitlements */,
+			);
+			path = "Zoom Now Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		212A87572432F149007C8669 /* Zoom Now */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212A87862432F14A007C8669 /* Build configuration list for PBXNativeTarget "Zoom Now" */;
+			buildPhases = (
+				212A87542432F149007C8669 /* Sources */,
+				212A87552432F149007C8669 /* Frameworks */,
+				212A87562432F149007C8669 /* Resources */,
+				212A87852432F14A007C8669 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				212A876E2432F14A007C8669 /* PBXTargetDependency */,
+			);
+			name = "Zoom Now";
+			productName = "Zoom Now";
+			productReference = 212A87582432F149007C8669 /* Zoom Now.app */;
+			productType = "com.apple.product-type.application";
+		};
+		212A876A2432F14A007C8669 /* Zoom Now Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212A87822432F14A007C8669 /* Build configuration list for PBXNativeTarget "Zoom Now Extension" */;
+			buildPhases = (
+				212A87672432F14A007C8669 /* Sources */,
+				212A87682432F14A007C8669 /* Frameworks */,
+				212A87692432F14A007C8669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zoom Now Extension";
+			productName = "Zoom Now Extension";
+			productReference = 212A876B2432F14A007C8669 /* Zoom Now Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		212A87502432F149007C8669 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Sam Soffes";
+				TargetAttributes = {
+					212A87572432F149007C8669 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					212A876A2432F14A007C8669 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 212A87532432F149007C8669 /* Build configuration list for PBXProject "Zoom Now" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 212A874F2432F149007C8669;
+			productRefGroup = 212A87592432F149007C8669 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				212A87572432F149007C8669 /* Zoom Now */,
+				212A876A2432F14A007C8669 /* Zoom Now Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		212A87562432F149007C8669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212A875C2432F149007C8669 /* Zoom_Now.entitlements in Resources */,
+				212A87652432F14A007C8669 /* Assets.xcassets in Resources */,
+				212A87612432F149007C8669 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212A87692432F14A007C8669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212A877E2432F14A007C8669 /* ToolbarItemIcon.pdf in Resources */,
+				212A87792432F14A007C8669 /* SafariExtensionViewController.xib in Resources */,
+				212A877C2432F14A007C8669 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		212A87542432F149007C8669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212A87632432F149007C8669 /* ViewController.swift in Sources */,
+				212A875E2432F149007C8669 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212A87672432F14A007C8669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212A87762432F14A007C8669 /* SafariExtensionViewController.swift in Sources */,
+				212A87742432F14A007C8669 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		212A876E2432F14A007C8669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 212A876A2432F14A007C8669 /* Zoom Now Extension */;
+			targetProxy = 212A876D2432F14A007C8669 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		212A875F2432F149007C8669 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				212A87602432F149007C8669 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		212A87772432F14A007C8669 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				212A87782432F14A007C8669 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		212A87802432F14A007C8669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		212A87812432F14A007C8669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		212A87832432F14A007C8669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Zoom Now Extension/Zoom_Now_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3YFY7Z97Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Zoom Now Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.Zoom-Now-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		212A87842432F14A007C8669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Zoom Now Extension/Zoom_Now_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3YFY7Z97Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Zoom Now Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.Zoom-Now-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		212A87872432F14A007C8669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Zoom Now/Zoom_Now.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J3YFY7Z97Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Zoom Now/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.Zoom-Now";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		212A87882432F14A007C8669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Zoom Now/Zoom_Now.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J3YFY7Z97Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Zoom Now/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.Zoom-Now";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		212A87532432F149007C8669 /* Build configuration list for PBXProject "Zoom Now" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212A87802432F14A007C8669 /* Debug */,
+				212A87812432F14A007C8669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		212A87822432F14A007C8669 /* Build configuration list for PBXNativeTarget "Zoom Now Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212A87832432F14A007C8669 /* Debug */,
+				212A87842432F14A007C8669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		212A87862432F14A007C8669 /* Build configuration list for PBXNativeTarget "Zoom Now" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212A87872432F14A007C8669 /* Debug */,
+				212A87882432F14A007C8669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 212A87502432F149007C8669 /* Project object */;
+}
