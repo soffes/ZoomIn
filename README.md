@@ -2,7 +2,14 @@
 
 # Zoom In
 
-App with Safari extension that automatically opens Zoom and closes the tab when you try to open a meeting.
+### Safari extension to automatically open Zoom links
+
+Are you Zooming all the time? Are you tired of telling Safari it’s okay to open Zoom links in Zoom? Have I got the app for you!
+
+Zoom In is an app that installs a Safari extension. This extension does two things. **It automatically opens Zoom links in the Zoom app.** If that works, it will automatically close the tab so you don’t have tons of ”Opening in Zoom…“ tabs left in your browser.
+
+Simple as that. **It’s free.** Enjoy!
+
 
 👉 **[Download the latest release](https://github.com/nothingmagical/ZoomIn/releases/download/v1.0.1/ZoomIn-1.0.1.zip)** 👈
 
