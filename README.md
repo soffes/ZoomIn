@@ -4,7 +4,7 @@
 
 App with Safari extension that automatically opens Zoom and closes the tab when you try to open a meeting.
 
-👉 **[Download the latest release](https://github.com/nothingmagical/ZoomIn/releases/download/v1.0/ZoomIn-1.0.zip)** 👈
+👉 **[Download the latest release](https://github.com/nothingmagical/ZoomIn/releases/download/v1.0.1/ZoomIn-1.0.1.zip)** 👈
 
 ## Thanks
 
