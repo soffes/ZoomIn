@@ -16,6 +16,9 @@
 		218E054E2433048A00DAF4A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E05452433048A00DAF4A7 /* AppDelegate.swift */; };
 		218E054F243304A200DAF4A7 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 218E05342433048A00DAF4A7 /* script.js */; };
 		218E0550243304AB00DAF4A7 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E05392433048A00DAF4A7 /* SafariExtensionHandler.swift */; };
+		21DC11EF2433A5DD0077262E /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21DC11DB2433A5DD0077262E /* LetsMove.framework */; };
+		21DC11F02433A5DD0077262E /* LetsMove.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 21DC11DC2433A5DD0077262E /* LetsMove.framework.dSYM */; };
+		21DC11F22433A6040077262E /* LetsMove.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21DC11DB2433A5DD0077262E /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,17 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21DC11F12433A5F90077262E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				21DC11F22433A6040077262E /* LetsMove.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +71,8 @@
 		218E05432433048A00DAF4A7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		218E05442433048A00DAF4A7 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		218E05452433048A00DAF4A7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21DC11DB2433A5DD0077262E /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
+		21DC11DC2433A5DD0077262E /* LetsMove.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = LetsMove.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21DC11EF2433A5DD0077262E /* LetsMove.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				218E05312433048A00DAF4A7 /* Modules */,
+				21DC11A82433A5DD0077262E /* Carthage */,
 				212A876F2432F14A007C8669 /* Frameworks */,
 				212A87592432F149007C8669 /* Products */,
 			);
@@ -186,6 +204,31 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		21DC11A82433A5DD0077262E /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				21DC11D82433A5DD0077262E /* Build */,
+			);
+			path = Carthage;
+			sourceTree = "<group>";
+		};
+		21DC11D82433A5DD0077262E /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				21DC11DA2433A5DD0077262E /* Mac */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		21DC11DA2433A5DD0077262E /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				21DC11DB2433A5DD0077262E /* LetsMove.framework */,
+				21DC11DC2433A5DD0077262E /* LetsMove.framework.dSYM */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,6 +239,7 @@
 				212A87542432F149007C8669 /* Sources */,
 				212A87552432F149007C8669 /* Frameworks */,
 				212A87562432F149007C8669 /* Resources */,
+				21DC11F12433A5F90077262E /* Embed Frameworks */,
 				212A87852432F14A007C8669 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -250,6 +294,32 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				ja,
+				mk,
+				zh_CN,
+				"zh-Hans",
+				nb,
+				es,
+				pt_BR,
+				"pt-BR",
+				da,
+				it,
+				sk,
+				sr,
+				sv,
+				cs,
+				ko,
+				hu,
+				tr,
+				pl,
+				zh_TW,
+				"zh-Hant",
+				ru,
+				fr,
+				nl,
+				pt,
+				ca,
 			);
 			mainGroup = 212A874F2432F149007C8669;
 			productRefGroup = 212A87592432F149007C8669 /* Products */;
@@ -267,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21DC11F02433A5DD0077262E /* LetsMove.framework.dSYM in Resources */,
 				218E05492433048A00DAF4A7 /* Assets.xcassets in Resources */,
 				218E054A2433048A00DAF4A7 /* Main.storyboard in Resources */,
 			);
@@ -373,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -441,7 +512,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Modules/ZoomInExtension/Support/ZoomInExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Modules/ZoomInExtension/Support/Info.plist;
@@ -450,7 +521,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.zoom-in.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -463,7 +534,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Modules/ZoomInExtension/Support/ZoomInExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Modules/ZoomInExtension/Support/Info.plist;
@@ -472,7 +543,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.zoom-in.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -488,15 +559,19 @@
 				CODE_SIGN_ENTITLEMENTS = Modules/ZoomIn/Support/ZoomIn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Modules/ZoomIn/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.zoom-in";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -511,15 +586,19 @@
 				CODE_SIGN_ENTITLEMENTS = Modules/ZoomIn/Support/ZoomIn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Modules/ZoomIn/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.zoom-in";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

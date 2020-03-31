@@ -14,7 +14,7 @@ class ViewController: NSViewController {
                 let alert = NSAlert(error: error)
 
                 // Add some more information
-                alert.informativeText = "Failed to open Safari preferences."
+                alert.informativeText = "Failed to open Safari preferences. If Zoom In is still in your Downloads folder, it won’t work. You need to move it to your Applications folder. Try quitting the app, doing that, and relaunching it."
 
                 // Show it from our window (or fallback to just showing on its own)
                 if let window = self?.view.window {
