@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		212A875C2432F149007C8669 /* ZoomIn.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 212A875B2432F149007C8669 /* ZoomIn.entitlements */; };
-		212A875E2432F149007C8669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A875D2432F149007C8669 /* AppDelegate.swift */; };
-		212A87612432F149007C8669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212A875F2432F149007C8669 /* Main.storyboard */; };
-		212A87632432F149007C8669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A87622432F149007C8669 /* ViewController.swift */; };
-		212A87652432F14A007C8669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212A87642432F14A007C8669 /* Assets.xcassets */; };
-		212A876C2432F14A007C8669 /* Zoom In Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 212A876B2432F14A007C8669 /* Zoom In Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		212A876C2432F14A007C8669 /* ZoomInExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 212A876B2432F14A007C8669 /* ZoomInExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		212A87712432F14A007C8669 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212A87702432F14A007C8669 /* Cocoa.framework */; };
-		212A87742432F14A007C8669 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A87732432F14A007C8669 /* SafariExtensionHandler.swift */; };
-		212A877C2432F14A007C8669 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 212A877B2432F14A007C8669 /* script.js */; };
-		218E0530243303C100DAF4A7 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E052F243303C100DAF4A7 /* WindowController.swift */; };
+		218E05492433048A00DAF4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218E053C2433048A00DAF4A7 /* Assets.xcassets */; };
+		218E054A2433048A00DAF4A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218E053D2433048A00DAF4A7 /* Main.storyboard */; };
+		218E054C2433048A00DAF4A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E05432433048A00DAF4A7 /* ViewController.swift */; };
+		218E054D2433048A00DAF4A7 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E05442433048A00DAF4A7 /* WindowController.swift */; };
+		218E054E2433048A00DAF4A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E05452433048A00DAF4A7 /* AppDelegate.swift */; };
+		218E054F243304A200DAF4A7 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 218E05342433048A00DAF4A7 /* script.js */; };
+		218E0550243304AB00DAF4A7 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E05392433048A00DAF4A7 /* SafariExtensionHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				212A876C2432F14A007C8669 /* Zoom In Extension.appex in Embed App Extensions */,
+				212A876C2432F14A007C8669 /* ZoomInExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,20 +43,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		212A87582432F149007C8669 /* Zoom In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zoom In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		212A875B2432F149007C8669 /* ZoomIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomIn.entitlements; sourceTree = "<group>"; };
-		212A875D2432F149007C8669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		212A87602432F149007C8669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		212A87622432F149007C8669 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		212A87642432F14A007C8669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		212A87662432F14A007C8669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		212A876B2432F14A007C8669 /* Zoom In Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Zoom In Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		212A87582432F149007C8669 /* ZoomIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		212A876B2432F14A007C8669 /* ZoomInExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZoomInExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		212A87702432F14A007C8669 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		212A87732432F14A007C8669 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
-		212A877A2432F14A007C8669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		212A877B2432F14A007C8669 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		212A877F2432F14A007C8669 /* ZoomInExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomInExtension.entitlements; sourceTree = "<group>"; };
-		218E052F243303C100DAF4A7 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		218E05342433048A00DAF4A7 /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		218E05362433048A00DAF4A7 /* ZoomInExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = ZoomInExtension.entitlements; sourceTree = "<group>"; };
+		218E05372433048A00DAF4A7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218E05392433048A00DAF4A7 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		218E053C2433048A00DAF4A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		218E053E2433048A00DAF4A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		218E05402433048A00DAF4A7 /* ZoomIn.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = ZoomIn.entitlements; sourceTree = "<group>"; };
+		218E05412433048A00DAF4A7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218E05432433048A00DAF4A7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		218E05442433048A00DAF4A7 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		218E05452433048A00DAF4A7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +81,7 @@
 		212A874F2432F149007C8669 = {
 			isa = PBXGroup;
 			children = (
-				212A875A2432F149007C8669 /* Zoom In */,
-				212A87722432F14A007C8669 /* Zoom In Extension */,
+				218E05312433048A00DAF4A7 /* Modules */,
 				212A876F2432F14A007C8669 /* Frameworks */,
 				212A87592432F149007C8669 /* Products */,
 			);
@@ -92,20 +90,10 @@
 		212A87592432F149007C8669 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				212A87582432F149007C8669 /* Zoom In.app */,
-				212A876B2432F14A007C8669 /* Zoom In Extension.appex */,
+				212A87582432F149007C8669 /* ZoomIn.app */,
+				212A876B2432F14A007C8669 /* ZoomInExtension.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		212A875A2432F149007C8669 /* Zoom In */ = {
-			isa = PBXGroup;
-			children = (
-				218E052A2433016000DAF4A7 /* Resources */,
-				218E05282433015100DAF4A7 /* Sources */,
-				218E05292433015800DAF4A7 /* Support */,
-			);
-			path = "Zoom In";
 			sourceTree = "<group>";
 		};
 		212A876F2432F14A007C8669 /* Frameworks */ = {
@@ -116,75 +104,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		212A87722432F14A007C8669 /* Zoom In Extension */ = {
+		218E05312433048A00DAF4A7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				218E052C243301DB00DAF4A7 /* Sources */,
-				218E052E243301EC00DAF4A7 /* Support */,
-				218E052D243301E500DAF4A7 /* Resources */,
+				218E053A2433048A00DAF4A7 /* ZoomIn */,
+				218E05322433048A00DAF4A7 /* ZoomInExtension */,
 			);
-			path = "Zoom In Extension";
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		218E05282433015100DAF4A7 /* Sources */ = {
+		218E05322433048A00DAF4A7 /* ZoomInExtension */ = {
 			isa = PBXGroup;
 			children = (
-				212A875D2432F149007C8669 /* AppDelegate.swift */,
-				212A87622432F149007C8669 /* ViewController.swift */,
-				218E052F243303C100DAF4A7 /* WindowController.swift */,
+				218E05332433048A00DAF4A7 /* Resources */,
+				218E05352433048A00DAF4A7 /* Support */,
+				218E05382433048A00DAF4A7 /* Sources */,
 			);
-			path = Sources;
+			path = ZoomInExtension;
 			sourceTree = "<group>";
 		};
-		218E05292433015800DAF4A7 /* Support */ = {
+		218E05332433048A00DAF4A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				212A875B2432F149007C8669 /* ZoomIn.entitlements */,
-				212A87662432F14A007C8669 /* Info.plist */,
-			);
-			path = Support;
-			sourceTree = "<group>";
-		};
-		218E052A2433016000DAF4A7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				212A875F2432F149007C8669 /* Main.storyboard */,
-				212A87642432F14A007C8669 /* Assets.xcassets */,
+				218E05342433048A00DAF4A7 /* script.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		218E052C243301DB00DAF4A7 /* Sources */ = {
+		218E05352433048A00DAF4A7 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				212A87732432F14A007C8669 /* SafariExtensionHandler.swift */,
+				218E05362433048A00DAF4A7 /* ZoomInExtension.entitlements */,
+				218E05372433048A00DAF4A7 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		218E05382433048A00DAF4A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				218E05392433048A00DAF4A7 /* SafariExtensionHandler.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		218E052D243301E500DAF4A7 /* Resources */ = {
+		218E053A2433048A00DAF4A7 /* ZoomIn */ = {
 			isa = PBXGroup;
 			children = (
-				212A877B2432F14A007C8669 /* script.js */,
+				218E053B2433048A00DAF4A7 /* Resources */,
+				218E053F2433048A00DAF4A7 /* Support */,
+				218E05422433048A00DAF4A7 /* Sources */,
+			);
+			path = ZoomIn;
+			sourceTree = "<group>";
+		};
+		218E053B2433048A00DAF4A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				218E053C2433048A00DAF4A7 /* Assets.xcassets */,
+				218E053D2433048A00DAF4A7 /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		218E052E243301EC00DAF4A7 /* Support */ = {
+		218E053F2433048A00DAF4A7 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				212A877A2432F14A007C8669 /* Info.plist */,
-				212A877F2432F14A007C8669 /* ZoomInExtension.entitlements */,
+				218E05402433048A00DAF4A7 /* ZoomIn.entitlements */,
+				218E05412433048A00DAF4A7 /* Info.plist */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		218E05422433048A00DAF4A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				218E05432433048A00DAF4A7 /* ViewController.swift */,
+				218E05442433048A00DAF4A7 /* WindowController.swift */,
+				218E05452433048A00DAF4A7 /* AppDelegate.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		212A87572432F149007C8669 /* Zoom In */ = {
+		212A87572432F149007C8669 /* ZoomIn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 212A87862432F14A007C8669 /* Build configuration list for PBXNativeTarget "Zoom In" */;
+			buildConfigurationList = 212A87862432F14A007C8669 /* Build configuration list for PBXNativeTarget "ZoomIn" */;
 			buildPhases = (
 				212A87542432F149007C8669 /* Sources */,
 				212A87552432F149007C8669 /* Frameworks */,
@@ -196,14 +203,14 @@
 			dependencies = (
 				212A876E2432F14A007C8669 /* PBXTargetDependency */,
 			);
-			name = "Zoom In";
+			name = ZoomIn;
 			productName = "Zoom Now";
-			productReference = 212A87582432F149007C8669 /* Zoom In.app */;
+			productReference = 212A87582432F149007C8669 /* ZoomIn.app */;
 			productType = "com.apple.product-type.application";
 		};
-		212A876A2432F14A007C8669 /* Zoom In Extension */ = {
+		212A876A2432F14A007C8669 /* ZoomInExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 212A87822432F14A007C8669 /* Build configuration list for PBXNativeTarget "Zoom In Extension" */;
+			buildConfigurationList = 212A87822432F14A007C8669 /* Build configuration list for PBXNativeTarget "ZoomInExtension" */;
 			buildPhases = (
 				212A87672432F14A007C8669 /* Sources */,
 				212A87682432F14A007C8669 /* Frameworks */,
@@ -213,9 +220,9 @@
 			);
 			dependencies = (
 			);
-			name = "Zoom In Extension";
+			name = ZoomInExtension;
 			productName = "Zoom Now Extension";
-			productReference = 212A876B2432F14A007C8669 /* Zoom In Extension.appex */;
+			productReference = 212A876B2432F14A007C8669 /* ZoomInExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -236,7 +243,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 212A87532432F149007C8669 /* Build configuration list for PBXProject "Zoom In" */;
+			buildConfigurationList = 212A87532432F149007C8669 /* Build configuration list for PBXProject "ZoomIn" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -249,8 +256,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				212A87572432F149007C8669 /* Zoom In */,
-				212A876A2432F14A007C8669 /* Zoom In Extension */,
+				212A87572432F149007C8669 /* ZoomIn */,
+				212A876A2432F14A007C8669 /* ZoomInExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -260,9 +267,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212A875C2432F149007C8669 /* ZoomIn.entitlements in Resources */,
-				212A87652432F14A007C8669 /* Assets.xcassets in Resources */,
-				212A87612432F149007C8669 /* Main.storyboard in Resources */,
+				218E05492433048A00DAF4A7 /* Assets.xcassets in Resources */,
+				218E054A2433048A00DAF4A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212A877C2432F14A007C8669 /* script.js in Resources */,
+				218E054F243304A200DAF4A7 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,9 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212A87632432F149007C8669 /* ViewController.swift in Sources */,
-				218E0530243303C100DAF4A7 /* WindowController.swift in Sources */,
-				212A875E2432F149007C8669 /* AppDelegate.swift in Sources */,
+				218E054E2433048A00DAF4A7 /* AppDelegate.swift in Sources */,
+				218E054C2433048A00DAF4A7 /* ViewController.swift in Sources */,
+				218E054D2433048A00DAF4A7 /* WindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212A87742432F14A007C8669 /* SafariExtensionHandler.swift in Sources */,
+				218E0550243304AB00DAF4A7 /* SafariExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,16 +306,16 @@
 /* Begin PBXTargetDependency section */
 		212A876E2432F14A007C8669 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 212A876A2432F14A007C8669 /* Zoom In Extension */;
+			target = 212A876A2432F14A007C8669 /* ZoomInExtension */;
 			targetProxy = 212A876D2432F14A007C8669 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		212A875F2432F149007C8669 /* Main.storyboard */ = {
+		218E053D2433048A00DAF4A7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				212A87602432F149007C8669 /* Base */,
+				218E053E2433048A00DAF4A7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -433,11 +439,11 @@
 		212A87832432F14A007C8669 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Zoom In Extension/Support/ZoomInExtension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Modules/ZoomInExtension/Support/ZoomInExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Zoom In Extension/Support/Info.plist";
+				INFOPLIST_FILE = Modules/ZoomInExtension/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -453,11 +459,11 @@
 		212A87842432F14A007C8669 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Zoom In Extension/Support/ZoomInExtension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Modules/ZoomInExtension/Support/ZoomInExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Zoom In Extension/Support/Info.plist";
+				INFOPLIST_FILE = Modules/ZoomInExtension/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -475,12 +481,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Zoom In/Support/ZoomIn.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Modules/ZoomIn/Support/ZoomIn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Zoom In/Support/Info.plist";
+				INFOPLIST_FILE = Modules/ZoomIn/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -496,12 +502,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Zoom In/Support/ZoomIn.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Modules/ZoomIn/Support/ZoomIn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Zoom In/Support/Info.plist";
+				INFOPLIST_FILE = Modules/ZoomIn/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -515,7 +521,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		212A87532432F149007C8669 /* Build configuration list for PBXProject "Zoom In" */ = {
+		212A87532432F149007C8669 /* Build configuration list for PBXProject "ZoomIn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				212A87802432F14A007C8669 /* Debug */,
@@ -524,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		212A87822432F14A007C8669 /* Build configuration list for PBXNativeTarget "Zoom In Extension" */ = {
+		212A87822432F14A007C8669 /* Build configuration list for PBXNativeTarget "ZoomInExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				212A87832432F14A007C8669 /* Debug */,
@@ -533,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		212A87862432F14A007C8669 /* Build configuration list for PBXNativeTarget "Zoom In" */ = {
+		212A87862432F14A007C8669 /* Build configuration list for PBXNativeTarget "ZoomIn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				212A87872432F14A007C8669 /* Debug */,
