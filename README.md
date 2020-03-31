@@ -1,3 +1,5 @@
+<img src="Modules/ZoomIn/Resources/Assets.xcassets/AppIcon.appiconset/Mac-256.png" width="128">
+
 # Zoom In
 
 App with Safari extension that automatically opens Zoom and closes the tab when you try to open a meeting.
