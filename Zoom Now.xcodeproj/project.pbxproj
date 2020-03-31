@@ -15,10 +15,7 @@
 		212A876C2432F14A007C8669 /* Zoom Now Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 212A876B2432F14A007C8669 /* Zoom Now Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		212A87712432F14A007C8669 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212A87702432F14A007C8669 /* Cocoa.framework */; };
 		212A87742432F14A007C8669 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A87732432F14A007C8669 /* SafariExtensionHandler.swift */; };
-		212A87762432F14A007C8669 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212A87752432F14A007C8669 /* SafariExtensionViewController.swift */; };
-		212A87792432F14A007C8669 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 212A87772432F14A007C8669 /* SafariExtensionViewController.xib */; };
 		212A877C2432F14A007C8669 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 212A877B2432F14A007C8669 /* script.js */; };
-		212A877E2432F14A007C8669 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 212A877D2432F14A007C8669 /* ToolbarItemIcon.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +53,8 @@
 		212A876B2432F14A007C8669 /* Zoom Now Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Zoom Now Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		212A87702432F14A007C8669 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		212A87732432F14A007C8669 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
-		212A87752432F14A007C8669 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
-		212A87782432F14A007C8669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		212A877A2432F14A007C8669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		212A877B2432F14A007C8669 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		212A877D2432F14A007C8669 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		212A877F2432F14A007C8669 /* Zoom_Now_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zoom_Now_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,12 +99,9 @@
 		212A875A2432F149007C8669 /* Zoom Now */ = {
 			isa = PBXGroup;
 			children = (
-				212A875B2432F149007C8669 /* Zoom_Now.entitlements */,
-				212A875D2432F149007C8669 /* AppDelegate.swift */,
-				212A875F2432F149007C8669 /* Main.storyboard */,
-				212A87622432F149007C8669 /* ViewController.swift */,
-				212A87642432F14A007C8669 /* Assets.xcassets */,
-				212A87662432F14A007C8669 /* Info.plist */,
+				218E052A2433016000DAF4A7 /* Resources */,
+				218E05282433015100DAF4A7 /* Sources */,
+				218E05292433015800DAF4A7 /* Support */,
 			);
 			path = "Zoom Now";
 			sourceTree = "<group>";
@@ -126,15 +117,63 @@
 		212A87722432F14A007C8669 /* Zoom Now Extension */ = {
 			isa = PBXGroup;
 			children = (
-				212A87732432F14A007C8669 /* SafariExtensionHandler.swift */,
-				212A87752432F14A007C8669 /* SafariExtensionViewController.swift */,
-				212A87772432F14A007C8669 /* SafariExtensionViewController.xib */,
-				212A877A2432F14A007C8669 /* Info.plist */,
-				212A877B2432F14A007C8669 /* script.js */,
-				212A877D2432F14A007C8669 /* ToolbarItemIcon.pdf */,
-				212A877F2432F14A007C8669 /* Zoom_Now_Extension.entitlements */,
+				218E052C243301DB00DAF4A7 /* Sources */,
+				218E052E243301EC00DAF4A7 /* Support */,
+				218E052D243301E500DAF4A7 /* Resources */,
 			);
 			path = "Zoom Now Extension";
+			sourceTree = "<group>";
+		};
+		218E05282433015100DAF4A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				212A875D2432F149007C8669 /* AppDelegate.swift */,
+				212A87622432F149007C8669 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		218E05292433015800DAF4A7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				212A875B2432F149007C8669 /* Zoom_Now.entitlements */,
+				212A87662432F14A007C8669 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		218E052A2433016000DAF4A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				212A875F2432F149007C8669 /* Main.storyboard */,
+				212A87642432F14A007C8669 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		218E052C243301DB00DAF4A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				212A87732432F14A007C8669 /* SafariExtensionHandler.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		218E052D243301E500DAF4A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				212A877B2432F14A007C8669 /* script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		218E052E243301EC00DAF4A7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				212A877A2432F14A007C8669 /* Info.plist */,
+				212A877F2432F14A007C8669 /* Zoom_Now_Extension.entitlements */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +267,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212A877E2432F14A007C8669 /* ToolbarItemIcon.pdf in Resources */,
-				212A87792432F14A007C8669 /* SafariExtensionViewController.xib in Resources */,
 				212A877C2432F14A007C8669 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212A87762432F14A007C8669 /* SafariExtensionViewController.swift in Sources */,
 				212A87742432F14A007C8669 /* SafariExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,14 +308,6 @@
 				212A87602432F149007C8669 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		212A87772432F14A007C8669 /* SafariExtensionViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				212A87782432F14A007C8669 /* Base */,
-			);
-			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -401,17 +429,17 @@
 		212A87832432F14A007C8669 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Zoom Now Extension/Zoom_Now_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Zoom Now Extension/Support/Zoom_Now_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J3YFY7Z97Y;
+				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Zoom Now Extension/Info.plist";
+				INFOPLIST_FILE = "Zoom Now Extension/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.Zoom-Now-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.zoom-now.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -421,17 +449,17 @@
 		212A87842432F14A007C8669 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Zoom Now Extension/Zoom_Now_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Zoom Now Extension/Support/Zoom_Now_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J3YFY7Z97Y;
+				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Zoom Now Extension/Info.plist";
+				INFOPLIST_FILE = "Zoom Now Extension/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.Zoom-Now-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.zoom-now.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -443,17 +471,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Zoom Now/Zoom_Now.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Zoom Now/Support/Zoom_Now.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = J3YFY7Z97Y;
+				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Zoom Now/Info.plist";
+				INFOPLIST_FILE = "Zoom Now/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.Zoom-Now";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.zoom-now";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -464,17 +492,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Zoom Now/Zoom_Now.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Zoom Now/Support/Zoom_Now.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = J3YFY7Z97Y;
+				DEVELOPMENT_TEAM = UP9C8XM22A;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Zoom Now/Info.plist";
+				INFOPLIST_FILE = "Zoom Now/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.Zoom-Now";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.zoom-now";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
