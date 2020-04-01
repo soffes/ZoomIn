@@ -25,6 +25,16 @@ The native Safari extension only handles messages from the JavaScript component.
 
 You can see all of the source code for the app here. Feel free to build it yourself (although please don’t redistribute it). If you have any questions, please open an issue on this repo. I’d be happy to answer them!
 
+## Building
+
+If you want to build Zoom In locally, you’ll need [Carthage](https://github.com/Carthage/Carthage) to gather the dependencies. The easiest way to install it is with [Homebrew](https://brew.sh): `brew install carthage`. Once you have it installed, run the following command:
+
+```sh
+$ carthage bootstrap
+```
+
+Now you can open the project in Xcode 11.3 or higher and build normally! Open an issue if you have any problems getting started!
+
 ## Thanks
 
 Icon glyphs by [i cons](https://thenounproject.com/term/video/3136011) and [Shashank Singh](https://thenounproject.com/term/zoom-in/2395378) from the Noun Project.
