@@ -2,13 +2,13 @@
 window.addEventListener("load", function(event) {
     // Get the URL from Zoom’s page
     let url;
-    let oldZoomPageElement = document.getElementById('scheme_url');
-    if (oldZoomPageElement) {
-        url = oldZoomPageElement['value'];
+    const linkElement = document.getElementById('scheme_url');
+    if (linkElement) {
+        url = linkElement['value'];
     } else {
-        const selectors = document.querySelectorAll('[launch]');
-        if (selectors.length > 0) {
-            url = selectors[0].href;
+        const anchorElement = document.querySelector('a[launch]');
+        if (anchorElement) {
+            url = anchorElement.href;
         }
     }
     
