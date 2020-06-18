@@ -1,7 +1,20 @@
 // Wait for the page to load
-document.addEventListener("DOMContentLoaded", function(event) {
+window.addEventListener("load", function(event) {
     // Get the URL from Zoom’s page
-    const url = document.getElementById('scheme_url')['value'];
+    let url;
+    const linkElement = document.getElementById('scheme_url');
+    if (linkElement) {
+        url = linkElement['value'];
+    } else {
+        const anchorElement = document.querySelector('a[launch]');
+        if (anchorElement) {
+            url = anchorElement.href;
+        }
+    }
+
+    if (!url) {
+        return;
+    }
 
     // Tell the native extension about the URL
     safari.extension.dispatchMessage('open', { url: url });
