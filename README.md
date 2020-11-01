@@ -1,3 +1,9 @@
+**Zoom In is deprecated.** Zoom keeps changing their page which breaks the plug-in. I don't use Zoom anymore so it's hard to keep up with them. Sorry, everyone.
+
+— Sam
+
+---
+
 <img src="Modules/ZoomIn/Resources/Assets.xcassets/AppIcon.appiconset/Mac-256.png" width="128">
 
 # Zoom In
