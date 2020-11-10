@@ -1,5 +1,7 @@
 **Zoom In is deprecated.** Zoom keeps changing their page which breaks the plug-in. I don't use Zoom anymore so it's hard to keep up with them. Sorry, everyone.
 
+Check out [this fork](https://github.com/ocastx/ZoomIn) by @ocastx for a maintained version.
+
 — Sam
 
 ---
